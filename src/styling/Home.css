@@ -1,0 +1,124 @@
+.homepage {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 2%;
+}
+
+.house-control1 button {
+  height: 50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 20vh;
+  font-weight: bold;
+  background: greenyellow;
+  border-color: greenyellow;
+  color: white !important;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.disabledButton {
+  background: gray !important;
+  border: none !important;
+  width: 50px;
+}
+
+.house-container {
+  display: flex;
+  width: 60vw;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14%;
+  align-items: center;
+}
+
+.select p {
+  color: #333;
+}
+
+.house-control2 button {
+  height: 50px;
+  width: 60px;
+  margin-top: 20vh;
+  font-weight: bold;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: #21893e;
+  border-color: #21893e;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.house-item {
+  display: grid;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 auto;
+  align-items: center;
+  text-align: center;
+  margin-right: 16px;
+  transition: transform 0.5s ease;
+  text-decoration: none;
+}
+
+.house-item h3 {
+  color: #434343;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 27px;
+}
+
+.house-item p {
+  font-size: 12px;
+  font-weight: 100;
+  padding: 2vh 4vw;
+  color: #b7b7b7;
+  margin-top: -2vh;
+}
+
+.house-item img {
+  width: 200px;
+  height: 200px;
+  border-radius: 45%;
+}
+
+.bullets {
+  font-size: 8px;
+  color: #b7b7b7;
+}
+
+@media (max-width: 600px) {
+  .select h1 {
+    font-size: 18px;
+  }
+
+  .house-item {
+    margin-right: 0;
+  }
+
+  .house-control1,
+  .house-control2 {
+    display: none;
+  }
+
+  .house-container {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    gap: 10px;
+  }
+}

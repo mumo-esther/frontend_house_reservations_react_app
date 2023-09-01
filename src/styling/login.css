@@ -1,0 +1,15 @@
+.login,
+.splash,
+.registration {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(47, 47, 47, 0.6), rgba(0, 0, 0, 0.8)), url('https://media.istockphoto.com/id/1456438564/photo/couple-second-key-to-new-home-with-hand-in-heart-symbol.webp?b=1&s=170667a&w=0&k=20&c=2U2bQ71RGLbZ-kcNH0VZGz_T_9JTa4T2PuFsrrlOkhg=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}

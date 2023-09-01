@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Fjalla+One&family=Pacifico&family=Pinyon+Script&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Figtree&family=Fjalla+One&family=Pacifico&family=Pinyon+Script&family=Roboto:ital@1&family=Zeyada&display=swap');
+
+.menu-icon {
+  display: block;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #21893e;
+  width: 100%;
+  padding: 10px;
+}
+
+.menu.open {
+  display: flex;
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.navbar-container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.content h2 {
+  font-size: 2.5em;
+  font-weight: 900;
+  color: #000;
+}
+
+.nav {
+  display: grid;
+  grid-template-rows: 20% 50% 5% 5%;
+  gap: 10px;
+  list-style: none;
+  padding: 20px 0;
+  height: 100vh;
+  width: 250px;
+  text-align: left;
+}
+
+.nav-h2 {
+  font-family: "Dancing Script", serif;
+  color: #000;
+  transform: rotate(-15deg);
+  text-decoration: underline;
+}
+
+.left-nav {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+  text-align: left;
+  margin-top: -20px;
+  border-right: 1px solid rgb(219, 216, 216);
+}
+
+.lower-nav {
+  padding: 10px;
+}
+
+.social {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.social li {
+  height: 2rem;
+  width: 2rem;
+}
+
+.links li a {
+  text-align: left;
+  font-weight: 1000;
+}
+
+.active {
+  font-weight: bold;
+  background: #21893e;
+  color: white !important;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.mobile {
+  display: none;
+  z-index: 10;
+}
+
+.ham-menu {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.social-logo {
+  height: 2rem;
+  width: 2rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    position: fixed;
+    background-color: rgb(83, 158, 179);
+    opacity: 0.95;
+    z-index: 99;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .mobile {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    display: inline;
+    z-index: 100;
+    color: #000;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .ham-menu {
+    float: right;
+    color: black;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: auto;
+    z-index: 100;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .left-nav {
+    width: 100px;
+  }
+}

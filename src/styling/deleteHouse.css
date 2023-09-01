@@ -1,0 +1,40 @@
+.delete-house {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: left;
+}
+
+.reserve-btn {
+  cursor: pointer;
+  background-color: #21893e;
+  width: 160px;
+  font-size: 14px;
+}
+
+.reserve-btn .navlink {
+  color: white;
+  font-weight: 500;
+}
+
+.reserve-btn .navlink:hover {
+  color: #21893e;
+  background-color: #ebfcea;
+}
+
+.deleted-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.deleted-message p {
+  color: white;
+  font-size: 21px;
+}
